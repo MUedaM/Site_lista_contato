@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio lista</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>formulario para inserir nomes na lista de contatos</h1>
+        </header>
+        <ol>
+            <li>Insira o nome completo</li>
+            <li>Numero de contato movel no formato DDD 9 XXXXXXXX e fixo DDD XXXXXXXX</li>
+        </ol>
+        <form id="form-contato">
+            <input type="text" required id="lista-nome" placeholder="Nome completo" style="text-align: center"/>
+            <input type="number" required id="lista-numero" placeholder="Numero de telefone" style="text-align: center"/>
+            <button type="submit">Adicionar +</button>
+        </form>
+        <table cellspacing = "0">
+            <thead>
+                <tr>
+                    <th>Nome completo</th>
+                    <th>Numero de telefone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>-----</td>
+                    <td>-----</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
